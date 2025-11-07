@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Developer Portfolio - [Dhara Niraj Mehta]</title>
+    <title>My Developer Portfolio - Dhara Mehta</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f9fb; /* Very light blue-gray background */
+            background-color: #eff6ff; /* Changed to a very light blue */
         }
         .container {
             max-width: 1000px;
@@ -23,12 +23,12 @@
     <header class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-indigo-600">
-                [Dhara Mehta]'s Portfolio
+                Dhara Mehta's Portfolio
             </h1>
             <nav>
                 <a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium ml-6 transition duration-300">About</a>
                 <a href="#skills" class="text-gray-600 hover:text-indigo-600 font-medium ml-6 transition duration-300">Skills</a>
-                <a href="#projects" class="text-gray-600 hover:text-indigo-600 font-medium ml-6 transition duration-300">Projects</a>
+                <!-- Removed Projects link -->
             </nav>
         </div>
     </header>
@@ -43,10 +43,10 @@
                  alt="Your Profile Picture"
                  onerror="this.onerror=null; this.src='https://placehold.co/96x96/6366f1/ffffff?text=PFP';"
             >
-            <h2 class="text-5xl font-extrabold text-gray-900 mb-2">Hello, I'm Dhara Niraj Mehta</h2>
+            <h2 class="text-5xl font-extrabold text-gray-900 mb-2">Hello, I'm Dhara Mehta</h2>
             <p class="text-xl text-gray-600 mb-6">C Programmer | Systems Enthusiast | Web Starter</p>
             <div class="flex justify-center space-x-4">
-                <a href="https://github.com/yourusername" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                <a href="https://github.com/dnmehta2007" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
                     View GitHub Profile
                 </a>
                 <a href="mailto:youremail@example.com" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
@@ -71,7 +71,7 @@
         <!-- Skills Section -->
         <section id="skills" class="mb-16">
             <h3 class="text-4xl font-bold text-center text-indigo-700 mb-8">Core Skills</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <!-- Skill Card 1: C Programming -->
                 <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
@@ -80,66 +80,24 @@
                     <p class="text-gray-600 text-sm">Expertise in pointers, memory allocation (malloc/free), system calls, and efficient data structure implementation.</p>
                 </div>
                 
-                <!-- Skill Card 2: Data Structures -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
-                    <div class="text-3xl mb-2 text-indigo-600">⚙️</div>
-                    <h4 class="text-xl font-semibold mb-2">Data Structures</h4>
-                    <p class="text-gray-600 text-sm">Implementation of Linked Lists, Trees (BSTs), Hash Tables, and various sorting algorithms.</p>
-                </div>
-
-                <!-- Skill Card 3: Web Basics -->
+                <!-- Skill Card 2: HTML/Web Development -->
                 <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
                     <div class="text-3xl mb-2 text-indigo-600">🌐</div>
-                    <h4 class="text-xl font-semibold mb-2">Web Basics</h4>
-                    <p class="text-gray-600 text-sm">HTML5 structure, CSS for modern styling (Tailwind CSS), and basic JavaScript for interaction.</p>
+                    <h4 class="text-xl font-semibold mb-2">HTML/Web Development</h4>
+                    <p class="text-gray-600 text-sm">Experience with **HTML5 structure**, **CSS** for modern styling (like this page uses!), and basic JavaScript for interactivity.</p>
                 </div>
 
-                <!-- Skill Card 4: Tools & OS -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 hover:shadow-xl transition duration-300">
-                    <div class="text-3xl mb-2 text-indigo-600">🐧</div>
-                    <h4 class="text-xl font-semibold mb-2">Tools & OS</h4>
-                    <p class="text-gray-600 text-sm">Experience with Linux/Unix, Git version control, and GNU Make for project builds.</p>
-                </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="mb-16">
-            <h3 class="text-4xl font-bold text-center text-indigo-700 mb-8">Featured Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Project Card 1: C Shell -->
-                <div class="bg-white p-6 rounded-xl shadow-xl flex flex-col transition duration-300 hover:ring-4 ring-indigo-200">
-                    <h4 class="text-2xl font-bold text-gray-900 mb-3">Mini Shell (C)</h4>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        A basic command-line interpreter built in C. It supports execution of external programs using `fork()` and `execve()`, demonstrating mastery of process management and file system calls.
-                    </p>
-                    <a href="https://github.com/yourusername/mini-shell" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-semibold mt-4 flex items-center">
-                        View Code on GitHub
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                </div>
-
-                <!-- Project Card 2: BST Implementation -->
-                <div class="bg-white p-6 rounded-xl shadow-xl flex flex-col transition duration-300 hover:ring-4 ring-indigo-200">
-                    <h4 class="text-2xl font-bold text-gray-900 mb-3">Binary Search Tree Library (C)</h4>
-                    <p class="text-gray-600 mb-4 flex-grow">
-                        A robust, purely C implementation of a Binary Search Tree with functions for insertion, deletion, and in-order/pre-order traversal, focusing on efficient pointer manipulation.
-                    </p>
-                    <a href="https://github.com/yourusername/bst-library" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-semibold mt-4 flex items-center">
-                        View Code on GitHub
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
+        <!-- Projects Section was here, now removed -->
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-6">
         <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; <span id="year"></span> [Your Name]. All rights reserved. Hosted via GitHub Pages.</p>
+            <p>&copy; <span id="year"></span> Dhara Mehta. All rights reserved. Hosted via GitHub Pages.</p>
             <div class="flex justify-center space-x-4 mt-2">
                 <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-indigo-400 transition duration-300">LinkedIn</a>
                 <a href="https://twitter.com/yourprofile" target="_blank" class="hover:text-indigo-400 transition duration-300">Twitter</a>
